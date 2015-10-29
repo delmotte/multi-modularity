@@ -22,6 +22,9 @@
             scope.show = false;
             scope.toggle = function () {
                 scope.show = !scope.show;
+                setTimeout(function () {
+                    document.querySelector('.post-v3 > .comments').scrollLeft = document.querySelector('.post-v3 > .comments').scrollWidth;
+                },100);
             };
             scope.showHide = function (event) {
                 if (event.which == 39) scope.show = true; // à droite

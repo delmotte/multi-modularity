@@ -9,6 +9,11 @@
     padding-bottom: 10px;
     font-size: 1.5em;
 }
-.post-v3 > .comments > .comment {
+.post-v3 > .comments > .comment-container > .comment {
     margin-left :0px !important;
+}
+
+.post-v3 > .comments {
+    width:100%;
+    overflow-x:auto;
 }

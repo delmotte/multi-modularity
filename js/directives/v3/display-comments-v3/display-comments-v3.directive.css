@@ -15,3 +15,13 @@
 .post-v3 > .comments > .comment-number {
     margin-left :0px !important;
 }
+.post-v3 > .comments .comments .comment-container {
+    position:absolute;
+    width:100%;
+    left:100%;
+    top:0px;
+}
+
+.post-v3 > .comments > .comment-container > .back {
+    display:none;
+}
