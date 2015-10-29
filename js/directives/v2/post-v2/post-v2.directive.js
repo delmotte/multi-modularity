@@ -19,7 +19,11 @@
 
         function link(scope, element, attrs) {
 
-            console.log(scope.data);
+            document.addEventListener('keyup', function (event) {
+                event.preventDefault();
+                if (event.which == 40) $.tabNext();//en bas
+                else if (event.which == 38) $.tabPrev();//en haut
+            }, false);
 
         }
 
