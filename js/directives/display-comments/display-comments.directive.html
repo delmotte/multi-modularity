@@ -1,5 +1,6 @@
 <div class="comments">
     <div ng-repeat="comment in comments" class="comment">
         <div class="content">{{ comment.content }}</div>
+        <display-comments ng-if="comment.comments.length > 0" comments="comment.comments"></display-comments>
     </div>
 </div>

@@ -3,9 +3,9 @@
 
     angular.module('comments').directive('displayComments', displayComments);
 
-    displayComments.$inject = [];
+    displayComments.$inject = ['RecursionHelper'];
 
-    function displayComments() {
+    function displayComments(RecursionHelper) {
         var directive = {
             link: link,
             templateUrl: 'js/directives/display-comments/display-comments.directive.html',
@@ -13,13 +13,17 @@
             replace: true,
             scope: {
                 comments: '='
-            }
+            },
+            compile: compile
         };
         return directive;
 
-        function link(scope, element, attrs) {
+        function link(scope, element, attrs) {}
 
-
+        function compile (element) {
+            // Use the compile function from the RecursionHelper,
+            // And return the linking function(s) which it returns
+            return RecursionHelper.compile(element);
         }
 
     }
