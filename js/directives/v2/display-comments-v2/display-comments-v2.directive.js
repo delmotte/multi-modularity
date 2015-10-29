@@ -18,12 +18,17 @@
         };
         return directive;
 
-        function link(scope, element, attrs) {}
+        function link(scope, element, attrs) {
+            scope.show = false;
+            scope.toggle = function () {
+                scope.show = !scope.show;
+            }
+        }
 
         function compile (element) {
             // Use the compile function from the RecursionHelper,
             // And return the linking function(s) which it returns
-            return RecursionHelper.compile(element);
+            return RecursionHelper.compile(element, link);
         }
 
     }

@@ -1,6 +1,19 @@
 <div class="comments">
-    <div ng-repeat="comment in comments" class="comment">
+
+    <div class="comment-number">
+        {{comments.length}} commentaire(s)
+        <a ng-click="toggle()">{{ show ? 'hide' : 'show'}}</a>
+    </div>
+
+    <div ng-if="show" ng-repeat="comment in comments" class="comment">
+
         <div class="content">{{ comment.content }}</div>
-        <display-comments-v2 ng-if="comment.comments.length > 0" comments="comment.comments"></display-comments-v2>
+
+        <display-comments-v2
+                ng-if="comment.comments.length > 0"
+                comments="comment.comments"
+                >
+        </display-comments-v2>
+
     </div>
 </div>
