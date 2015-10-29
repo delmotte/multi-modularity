@@ -3,6 +3,15 @@
     font-size: 3em;
 }
 .content{
+
+}
+.post-content{
     background-color: lightgray;
     text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+.post > .comments > .comment {
+    margin-left :0px !important;
 }
