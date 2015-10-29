@@ -1,6 +1,7 @@
 .post-v1 .title{
     text-align : center;
     font-size: 3em;
+    font-family: 'Roboto', sans-serif;
 }
 .post-v1 .post-content{
     background-color: lightgray;

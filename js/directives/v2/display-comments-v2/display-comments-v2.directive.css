@@ -4,3 +4,8 @@
 .post-v2 .comment{
     margin-left: 55px;
 }
+.post-v2 .title{
+    text-align : center;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+}
