@@ -2,7 +2,10 @@
 
     <div class="comment-number">
         {{comments.length}} commentaire(s)
-        <button ng-click="toggle()">{{ show ? 'hide' : 'show'}}</button>
+        <button
+                ng-click="toggle()"
+                ng-keyup="showHide($event)"
+                >{{ show ? 'hide' : 'show'}}</button>
     </div>
 
     <div ng-if="show" ng-repeat="comment in comments" class="comment">

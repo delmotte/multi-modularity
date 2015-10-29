@@ -22,7 +22,11 @@
             scope.show = false;
             scope.toggle = function () {
                 scope.show = !scope.show;
-            }
+            };
+            scope.showHide = function (event) {
+                if (event.which == 39) scope.show = true; // à droite
+                else if (event.which == 37) scope.show = false; // à gauche
+            };
         }
 
         function compile (element) {
