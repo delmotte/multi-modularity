@@ -1,3 +1,5 @@
-<div>
-    display comments
+<div class="comments">
+    <div ng-repeat="comment in comments" class="comment">
+        <div class="content">{{ comment.content }}</div>
+    </div>
 </div>

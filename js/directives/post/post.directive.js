@@ -12,13 +12,14 @@
             restrict: 'E',
             replace: true,
             scope: {
-                selected: '=category'
+                data: '='
             }
         };
         return directive;
 
         function link(scope, element, attrs) {
 
+            console.log(scope.data);
 
         }
 

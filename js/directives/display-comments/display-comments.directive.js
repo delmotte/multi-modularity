@@ -12,7 +12,7 @@
             restrict: 'E',
             replace: true,
             scope: {
-                selected: '=category'
+                comments: '='
             }
         };
         return directive;
