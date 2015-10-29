@@ -1,17 +1,17 @@
-.post-v2  .comment > .content{
+.post-v3  .comment > .content{
     padding: 10px 10px 10px 10px;
 }
-.post-v2 .comment{
+.post-v3 .comment{
     margin-left: 55px;
 }
-.post-v2 .title{
+.post-v3 .title{
     text-align : center;
     font-size: 3em;
     font-family: 'Roboto', sans-serif;
 }
-.post-v2 .comment-number{
+.post-v3 .comment-number{
     margin-left: 55px;
 }
-.post-v2 > .comments > .comment-number {
+.post-v3 > .comments > .comment-number {
     margin-left :0px !important;
 }

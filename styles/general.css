@@ -3,3 +3,6 @@
 
 @import '../js/directives/v2/display-comments-v2/display-comments-v2.directive.css';
 @import '../js/directives/v2/post-v2/post-v2.directive.css';
+
+@import '../js/directives/v3/display-comments-v3/display-comments-v3.directive.css';
+@import '../js/directives/v3/post-v3/post-v3.directive.css';
