@@ -1,6 +1,6 @@
-.comment > .content{
+.post-v1  .comment > .content{
     padding: 10px 10px 10px 10px;
 }
-.comment{
+.post-v1 .comment{
     margin-left: 55px;
 }

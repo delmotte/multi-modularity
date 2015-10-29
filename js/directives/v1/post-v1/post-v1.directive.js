@@ -1,14 +1,14 @@
 (function () {
     'use strict';
 
-    angular.module('comments').directive('post', postDirective);
+    angular.module('comments').directive('postV1', postDirective);
 
     postDirective.$inject = [];
 
     function postDirective() {
         var directive = {
             link: link,
-            templateUrl: 'js/directives/post/post.directive.html',
+            templateUrl: 'js/directives/v1/post-v1/post-v1.directive.html',
             restrict: 'E',
             replace: true,
             scope: {

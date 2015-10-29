@@ -1,14 +1,14 @@
 (function () {
     'use strict';
 
-    angular.module('comments').directive('displayComments', displayComments);
+    angular.module('comments').directive('displayCommentsV1', displayComments);
 
     displayComments.$inject = ['RecursionHelper'];
 
     function displayComments(RecursionHelper) {
         var directive = {
             link: link,
-            templateUrl: 'js/directives/display-comments/display-comments.directive.html',
+            templateUrl: 'js/directives/v1/display-comments-v1/display-comments-v1.directive.html',
             restrict: 'E',
             replace: true,
             scope: {
