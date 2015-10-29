@@ -1,0 +1,14 @@
+.post-v2 .title{
+    text-align : center;
+    font-size: 3em;
+}
+.post-v2 .post-content{
+    background-color: lightgray;
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+.post-v2 > .comments > .comment {
+    margin-left :0px !important;
+}

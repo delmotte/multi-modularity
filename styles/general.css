@@ -1,2 +1,5 @@
 @import '../js/directives/v1/display-comments-v1/display-comments-v1.directive.css';
 @import '../js/directives/v1/post-v1/post-v1.directive.css';
+
+@import '../js/directives/v2/display-comments-v2/display-comments-v2.directive.css';
+@import '../js/directives/v2/post-v2/post-v2.directive.css';
