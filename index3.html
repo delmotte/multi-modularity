@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/general.css"/>
+    <script src="data.js"></script>
 </head>
-<body>
+<body ng-app="comments" ng-controller="AmazingController as ac">
+
+<post-v3 data="ac.post"></post-v3>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jQuery.tabbable/jquery.tabbable.min.js"></script>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services/RecursionHelper.factory.js"></script>
+
+<script src="js/directives/v1/post-v1/post-v1.directive.js"></script>
+<script src="js/directives/v1/display-comments-v1/display-comments-v1.directive.js"></script>
+
+<script src="js/directives/v2/post-v2/post-v2.directive.js"></script>
+<script src="js/directives/v2/display-comments-v2/display-comments-v2.directive.js"></script>
+
+<script src="js/directives/v3/post-v3/post-v3.directive.js"></script>
+<script src="js/directives/v3/display-comments-v3/display-comments-v3.directive.js"></script>
 
 </body>
 </html>

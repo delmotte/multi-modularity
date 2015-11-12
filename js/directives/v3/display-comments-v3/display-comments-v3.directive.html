@@ -12,7 +12,7 @@
 
         <button ng-if="show" ng-click="toggle()" class="back">BACK</button>
         <div ng-if="show" ng-repeat="comment in comments" class="comment">
-            <div class="content">{{ comment.content }}</div>
+            <div class="content"><b>{{comment.name}} :</b> {{ comment.content }}</div>
 
             <display-comments-v3
                     ng-if="comment.comments.length > 0"
